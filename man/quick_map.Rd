@@ -4,13 +4,14 @@
 \alias{quick_map}
 \title{Plot a fortified map using coord_quickmap}
 \usage{
-quick_map(map_data, map_id = "region")
+quick_map(map_data, map_id = NULL)
 }
 \arguments{
 \item{map_id}{since map data for ggplot is sometimes inconsistent in
 the naming scheme for the column providing the \code{map_id},
-use "\code{region}" by default but let the caller specify
-another name (e.g. "\code{id}") if it's different.}
+this function will try to determine if "\code{region}" or "\code{id}"
+is being used but will use the caller-specified \code{map_id} if
+present.}
 
 \item{map_d}{the fortified map data frame}
 }
@@ -18,6 +19,8 @@ another name (e.g. "\code{id}") if it's different.}
 ggplot object
 }
 \description{
-Plot a fortified map using coord_quickmap
+This function will try to automatically determine what column in
+\code{map_data} should be used for the \code{map_id}. Specifying a
+value overrides this heuristic.
 }
 
