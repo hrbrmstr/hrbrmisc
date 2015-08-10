@@ -15,7 +15,7 @@
 
 #' "Not in"
 #'
-#' Avoids awkward-to-type \code{a \%in\% b}
+#' Avoids awkward-to-type \code{!a \%in\% b}
 #'
 #' @param x vector or NULL: the values to be matched.
 #' @param table vector or NULL: the values to be matched against
