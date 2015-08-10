@@ -12,6 +12,6 @@ x \%notin\% table
 \item{table}{vector or NULL: the values to be matched against}
 }
 \description{
-Avoids awkward-to-type \code{a \%in\% b}
+Avoids awkward-to-type \code{!a \%in\% b}
 }
 
