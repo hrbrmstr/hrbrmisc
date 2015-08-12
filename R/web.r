@@ -17,8 +17,7 @@
 #' @author @@hrbrmstr
 #' @examples
 #' library(httr)
-#' url <- "http://www.claritin.com/webservice/allergyforecast.php?zip=33956"
-#' foo <- GET(url)
+#' foo <- GET("http://www.claritin.com/webservice/allergyforecast.php?zip=33956")
 #' has_bom(foo)
 #'
 #' cfoo <- content(foo, as="text")
@@ -34,13 +33,16 @@ has_bom <- function(resp, encoding="UTF-8") {
            `UTF-16BE`=F[1]==as.raw(0xfe) & F[2]==as.raw(0xff),
            { message("Unsupported encoding") ; return(NA) }
     )
-  } else {
+  } else if (inherits(resp, "character")) {
     switch(encoding,
            `UTF-8`=grepl("^ï»¿", resp[1]),
            `UTF-16`=grepl("^þÿ", resp[1]),
            `UTF-16BE`=grepl("^þÿ", resp[1]),
            { message("Unsupported encoding") ; return(NA) }
     )
+  } else {
+    message("Expected either an httr::response object or a character")
+    return(NA)
   }
 }
 

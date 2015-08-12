@@ -26,8 +26,7 @@ override it.}
 }
 \examples{
 library(httr)
-url <- "http://www.claritin.com/webservice/allergyforecast.php?zip=33956"
-foo <- GET(url)
+foo <- GET("http://www.claritin.com/webservice/allergyforecast.php?zip=33956")
 has_bom(foo)
 
 cfoo <- content(foo, as="text")
