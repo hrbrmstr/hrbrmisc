@@ -29,8 +29,8 @@ has_bom <- function(resp, encoding="UTF-8") {
     F <- resp$content[1:4]
     switch(encoding,
            `UTF-8`=F[1]==as.raw(0xef) & F[2]==as.raw(0xbb) & F[3]==as.raw(0xbf),
-           `UTF-16`=F[1]==as.raw(0xfe) & F[2]==as.raw(0xff),
-           `UTF-16BE`=F[1]==as.raw(0xff) & F[2]==as.raw(0xfe),
+           `UTF-16`=F[1]==as.raw(0xff) & F[2]==as.raw(0xfe),
+           `UTF-16BE`=F[1]==as.raw(0xfe) & F[2]==as.raw(0xff),
            { message("Unsupported encoding") ; return(NA) }
     )
   } else if (inherits(resp, "character")) {
@@ -69,9 +69,9 @@ sans_bom <- function(resp) {
     F <- resp$content[1:4]
     if (F[1]==as.raw(0xef) & F[2]==as.raw(0xbb) & F[3]==as.raw(0xbf)) {
       iconv(readBin(resp$content[4:length(resp$content)], character()), from="UTF-8", to="UTF-8")
-    } else if (F[1]==as.raw(0xfe) & F[2]==as.raw(0xff)) {
-      iconv(readBin(resp$content[3:length(resp$content)], character()), from="UTF-16", to="UTF-8")
     } else if (F[1]==as.raw(0xff) & F[2]==as.raw(0xfe)) {
+      iconv(readBin(resp$content[3:length(resp$content)], character()), from="UTF-16", to="UTF-8")
+    } else if (F[1]==as.raw(0xfe) & F[2]==as.raw(0xff)) {
       iconv(readBin(resp$content[3:length(resp$content)], character()), from="UTF-16BE", to="UTF-8")
     } else {
       stop("Did not detect a BOM in the httr::response object content.", call.=FALSE)
