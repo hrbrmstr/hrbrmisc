@@ -2,18 +2,27 @@
 % Please edit documentation in R/web.r
 \name{has_bom}
 \alias{has_bom}
-\title{Tests whether raw httr response or character vector has a byte-order-mark}
+\title{Tests whether a raw httr response or character vector has a byte order mark (BOM)}
 \usage{
-has_bom(resp)
+has_bom(resp, encoding = "UTF-8")
 }
 \arguments{
 \item{resp}{\code{httr} response object or a character vector}
+
+\item{encoding}{can be one of \code{UTF-8}, \code{UTF-16} or \code{UTF-16BE}.
+Although a BOM could be used with UTF-32 and other encodings, such
+encodings are rarely used for data transmission and the three supported
+encodings are the most likely ones folks in R will be working with from
+web APIs.\cr\cr
+This function defaults to looking for \code{UTF-8} BOM, but you can
+override it.}
 }
 \value{
-\code{TRUE} if response contains a byte-order-mark
+\code{TRUE} if response contains a BOM, \code{NA} if an unsupported encoding
+        was passed (along with a message)
 }
 \description{
-Tests whether raw httr response or character vector has a byte-order-mark
+\href{https://en.wikipedia.org/wiki/Byte_order_mark}{What is a byte order mark?}
 }
 \examples{
 library(httr)
@@ -23,5 +32,13 @@ has_bom(foo)
 
 cfoo <- content(foo, as="text")
 has_bom(cfoo)
+
+has_bom(GET("http://google.com"))
+}
+\author{
+@hrbrmstr
+}
+\references{
+\href{http://www.unicode.org/faq/utf_bom.html}{UTF-8, UTF-16, UTF-32 & BOM}
 }
 
