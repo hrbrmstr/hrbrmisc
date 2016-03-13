@@ -3,8 +3,16 @@ Title: What the Package Does (one line, title case)
 Version: 0.0.0.9002
 Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")))
 Description: What the package does (one paragraph).
-Depends: R (>= 3.0.0)
+Depends:
+    R (>= 3.0.0)
 License: MIT + file LICENSE
 LazyData: true
-Suggests: testthat, ggthemes, grid, scales
-Imports: ggplot2, fastmatch
+Suggests:
+    testthat,
+    ggthemes,
+    grid,
+    scales
+Imports:
+    ggplot2,
+    fastmatch
+RoxygenNote: 5.0.1
