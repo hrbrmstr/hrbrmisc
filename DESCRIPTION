@@ -14,5 +14,11 @@ Suggests:
     scales
 Imports:
     ggplot2,
-    fastmatch
+    fastmatch,
+    shiny,
+    miniUI,
+    rstudioapi,
+    gtable,
+    grid,
+    formatR
 RoxygenNote: 5.0.1
