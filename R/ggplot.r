@@ -17,7 +17,7 @@
 #' @export
 ggplot_with_subtitle <- function(gg,
                                  label="",
-                                 fontfamily="OpenSans-CondensedLight",
+                                 fontfamily=NULL,
                                  fontsize=10,
                                  hjust=0, vjust=0,
                                  bottom_margin=5.5,
@@ -26,9 +26,9 @@ ggplot_with_subtitle <- function(gg,
                                  ...) {
 
   if (is.null(fontfamily)) {
-    gpr <- gpar(fontsize=10, ...)
+    gpr <- gpar(fontsize=fontsize, ...)
   } else {
-    gpr <- gpar(fontfamily=fontfamily, fontsize=10, ...)
+    gpr <- gpar(fontfamily=fontfamily, fontsize=fontsize, ...)
   }
 
   subtitle <- textGrob(label, x=unit(hjust, "npc"), y=unit(hjust, "npc"),
