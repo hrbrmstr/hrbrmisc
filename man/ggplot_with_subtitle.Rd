@@ -4,9 +4,9 @@
 \alias{ggplot_with_subtitle}
 \title{Add a subtitle to a ggplot object and draw plot on current graphics device.}
 \usage{
-ggplot_with_subtitle(gg, label = "", fontfamily = "OpenSans-CondensedLight",
-  fontsize = 10, hjust = 0, vjust = 0, bottom_margin = 5.5,
-  newpage = is.null(vp), vp = NULL, ...)
+ggplot_with_subtitle(gg, label = "", fontfamily = NULL, fontsize = 10,
+  hjust = 0, vjust = 0, bottom_margin = 5.5, newpage = is.null(vp),
+  vp = NULL, ...)
 }
 \arguments{
 \item{gg}{ggplot2 object}
