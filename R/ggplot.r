@@ -17,7 +17,7 @@
 #' @export
 ggplot_with_subtitle <- function(gg,
                                  label="",
-                                 fontfamily=NULL,
+                                 fontfamily="OpenSans-CondensedLight",
                                  fontsize=10,
                                  hjust=0, vjust=0,
                                  bottom_margin=5.5,

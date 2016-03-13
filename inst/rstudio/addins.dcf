@@ -1,0 +1,4 @@
+Name: Add subtitle
+Description: Adds a subtitle to a ggplot2 plot object
+Binding: add_subtitle
+Interactive: true
