@@ -88,7 +88,16 @@ theme_hrbrmstr <- function(base_family = "NoyhSlim-Light",
     ret <- ret + theme(axis.line=element_blank())
   }
 
-  if (!ticks) ret <- ret + theme(axis.ticks = element_blank())
+  if (!ticks) {
+    ret <- ret + theme(axis.ticks = element_blank())
+    ret <- ret + theme(axis.ticks.x = element_blank())
+    ret <- ret + theme(axis.ticks.y = element_blank())
+  } else {
+    ret <- ret + theme(axis.ticks = element_line(size=0.15))
+    ret <- ret + theme(axis.ticks.x = element_line(size=0.15))
+    ret <- ret + theme(axis.ticks.y = element_line(size=0.15))
+    ret <- ret + theme(axis.ticks.length = grid::unit(5, "pt"))
+  }
 
   xj <- switch(tolower(substr(axis_title_just, 1, 1)), b=0, l=0, m=0.5, c=0.5, r=1, t=1)
   yj <- switch(tolower(substr(axis_title_just, 2, 2)), b=0, l=0, m=0.5, c=0.5, r=1, t=1)
@@ -104,4 +113,65 @@ theme_hrbrmstr <- function(base_family = "NoyhSlim-Light",
 
   ret
 
+}
+
+#' Open Sans Condensed theme
+#'
+#' @export
+theme_hrbrmstr_os <- function() {
+  theme_hrbrmstr(base_family="OpenSans-CondensedLight",
+                 plot_title_family="OpenSans-CondensedBold",
+                 subtitle_family="OpenSans-CondensedLightItalic",
+                 caption_family="OpenSans-CondensedLight")
+}
+
+#' Arial Narrow theme
+#'
+#' @export
+theme_hrbrmstr_ar <- function() {
+  theme_hrbrmstr(base_family="ArialNarrow",
+                 plot_title_family="ArialNarrow-Bold",
+                 subtitle_family="ArialNarrow-Italic",
+                 caption_family="ArialNarrow")
+}
+
+#' Myriad Pro theme
+#'
+#' @export
+theme_hrbrmstr_my <- function() {
+  theme_hrbrmstr(base_family="MyriadPro-Cond",
+                 plot_title_family="MyriadPro-BoldCond",
+                 subtitle_family="MyriadPro-CondIt",
+                 caption_family="MyriadPro-Cond")
+}
+
+#' San Francisco theme
+#'
+#' @export
+theme_hrbrmstr_sf <- function() {
+  theme_hrbrmstr(base_family="SanFranciscoText-Light",
+                 plot_title_family="SanFranciscoText-Bold",
+                 subtitle_family="SanFranciscoText-LightItalic",
+                 caption_family="SanFranciscoText-Light")
+}
+
+#' Skia theme
+#'
+#' @export
+theme_hrbrmstr_sk <- function() {
+  theme_hrbrmstr(base_family="Skia-Regular_Condensed",
+                 plot_title_family="Skia-Regular_Black",
+                 subtitle_family="Skia-Regular_Light",
+                 caption_family="Skia-Regular_Light-Condensed")
+}
+
+
+#' Exo 2 theme
+#'
+#' @export
+theme_hrbrmstr_ex <- function() {
+  theme_hrbrmstr(base_family="Exo2-Light",
+                 plot_title_family="Exo2-Bold",
+                 subtitle_family="Exo2-LightItalic",
+                 caption_family="Exo2-Thin")
 }
