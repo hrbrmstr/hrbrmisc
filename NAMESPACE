@@ -3,7 +3,6 @@
 export("%fmin%")
 export("%notfmin%")
 export("%notin%")
-export(ggplot_with_subtitle)
 export(has_bom)
 export(has_env_var)
 export(igrep)
