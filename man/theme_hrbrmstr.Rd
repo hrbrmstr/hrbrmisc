@@ -10,7 +10,7 @@ theme_hrbrmstr(base_family = "NoyhSlim-Light", base_size = 11,
   plot_title_margin = 10, subtitle_family = "NoyhSlim-LightItalic",
   subtitle_size = 14, subtitle_margin = 15,
   caption_family = "NoyhSlim-ExtraLight", caption_size = 9,
-  caption_margin = 10, axis_title_family = "NoyhSlim-LightItalic",
+  caption_margin = 10, axis_title_family = subtitle_family,
   axis_title_size = 9, axis_title_just = "rt", grid = TRUE,
   axis = FALSE, ticks = FALSE)
 }
@@ -29,6 +29,18 @@ theme_hrbrmstr(base_family = "NoyhSlim-Light", base_size = 11,
 
 \item{plot_title_margin}{plot title margin}
 
+\item{subtitle_family}{plot subtitle family}
+
+\item{subtitle_size}{plot subtitle size}
+
+\item{subtitle_margin}{plot subtitle margin}
+
+\item{caption_family}{plot caption family}
+
+\item{caption_size}{plot caption size}
+
+\item{caption_margin}{plot caption margin}
+
 \item{axis_title_family}{axis title font family}
 
 \item{axis_title_size}{axis title font size}
@@ -38,12 +50,12 @@ theme_hrbrmstr(base_family = "NoyhSlim-Light", base_size = 11,
 \item{grid}{panel grid (\code{TRUE}, \code{FALSE}, or a combination of
 \code{X}, \code{x}, \code{Y}, \code{y})}
 
-\item{axis}{axis}
+\item{axis}{axis \code{TRUE}, \code{FALSE}, [\code{xy}]}
 
 \item{ticks}{ticks}
 }
 \description{
-It requires installing Open Sans Condensed fonts from Google Fonts
-unless you change the font parameters
+It requires installing Noyh Slim fonts (not free) unless you change
+the font parameters
 }
 

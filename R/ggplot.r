@@ -1,7 +1,7 @@
 #' My ggplot2 go-to theme
 #'
-#' It requires installing Open Sans Condensed fonts from Google Fonts
-#' unless you change the font parameters
+#' It requires installing Noyh Slim fonts (not free) unless you change
+#' the font parameters
 #'
 #' @param base_family base font family
 #' @param base_size base font size
@@ -10,12 +10,18 @@
 #' @param plot_title_family plot tilte family
 #' @param plot_title_size plot title font size
 #' @param plot_title_margin plot title margin
+#' @param subtitle_family plot subtitle family
+#' @param subtitle_size plot subtitle size
+#' @param subtitle_margin plot subtitle margin
+#' @param caption_family plot caption family
+#' @param caption_size plot caption size
+#' @param caption_margin plot caption margin
 #' @param axis_title_family axis title font family
 #' @param axis_title_size axis title font size
 #' @param axis_title_just axis title font justification \code{blmcrt}
 #' @param grid panel grid (\code{TRUE}, \code{FALSE}, or a combination of
 #'        \code{X}, \code{x}, \code{Y}, \code{y})
-#' @param axis axis
+#' @param axis axis \code{TRUE}, \code{FALSE}, [\code{xy}]
 #' @param ticks ticks
 #' @export
 theme_hrbrmstr <- function(base_family = "NoyhSlim-Light",
@@ -74,6 +80,9 @@ theme_hrbrmstr <- function(base_family = "NoyhSlim-Light",
       } else {
         ret <- ret + theme(axis.line.y=element_line(color="#2b2b2b", size=0.15))
       }
+    } else {
+      ret <- ret + theme(axis.line.x=element_line(color="#2b2b2b", size=0.15))
+      ret <- ret + theme(axis.line.y=element_line(color="#2b2b2b", size=0.15))
     }
   } else {
     ret <- ret + theme(axis.line=element_blank())
