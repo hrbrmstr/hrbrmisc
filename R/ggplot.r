@@ -104,6 +104,7 @@ theme_hrbrmstr <- function(base_family = "NoyhSlim-Light",
 
   ret <- ret + theme(axis.text.x=element_text(margin=margin(t=-10)))
   ret <- ret + theme(axis.text.y=element_text(margin=margin(r=-10)))
+  ret <- ret + theme(axis.title=element_text(size=axis_title_size, family=axis_title_family))
   ret <- ret + theme(axis.title.x=element_text(hjust=xj, size=axis_title_size, family=axis_title_family))
   ret <- ret + theme(axis.title.y=element_text(hjust=yj, size=axis_title_size, family=axis_title_family))
   ret <- ret + theme(strip.text=element_text(hjust=0, size=strip_text_size, family=strip_text_family))
