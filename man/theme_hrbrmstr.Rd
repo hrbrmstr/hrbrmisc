@@ -4,12 +4,15 @@
 \alias{theme_hrbrmstr}
 \title{My ggplot2 go-to theme}
 \usage{
-theme_hrbrmstr(base_family = "OpenSans-CondensedLight", base_size = 11,
+theme_hrbrmstr(base_family = "NoyhSlim-Light", base_size = 11,
   strip_text_family = base_family, strip_text_size = 12,
-  plot_title_family = "OpenSans-CondensedBold", plot_title_size = 18,
-  plot_title_margin = 16,
-  axis_title_family = "OpenSans-CondensedLightItalic", axis_title_size = 9,
-  axis_title_just = "rt", grid = TRUE, axis = FALSE, ticks = FALSE)
+  plot_title_family = "NoyhSlim-Bold", plot_title_size = 18,
+  plot_title_margin = 10, subtitle_family = "NoyhSlim-LightItalic",
+  subtitle_size = 14, subtitle_margin = 15,
+  caption_family = "NoyhSlim-ExtraLight", caption_size = 9,
+  caption_margin = 10, axis_title_family = "NoyhSlim-LightItalic",
+  axis_title_size = 9, axis_title_just = "rt", grid = TRUE,
+  axis = FALSE, ticks = FALSE)
 }
 \arguments{
 \item{base_family}{base font family}

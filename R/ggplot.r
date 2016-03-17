@@ -1,61 +1,3 @@
-#' Add a subtitle to a ggplot object and draw plot on current graphics device.
-#'
-#' @param gg ggplot2 object
-#' @param label subtitle label
-#' @param fontfamily font family to use. The function doesn't pull any font
-#'        information from \code{gg} so you should consider specifying fonts
-#'        for the plot itself and here. Or send me code to make this smarter :-)
-#' @param fontsize font size
-#' @param hjust,vjust horizontal/vertical justification
-#' @param bottom_margin space between bottom of subtitle and plot (code{pts})
-#' @param newpage draw new (empty) page first?
-#' @param vp viewport to draw plot in
-#' @param ... parameters passed to \code{gpar} in call to \code{textGrob}
-#' @return Invisibly returns the result of \code{\link{ggplot_build}}, which
-#'   is a list with components that contain the plot itself, the data,
-#'   information about the scales, panels etc.
-#' @export
-ggplot_with_subtitle <- function(gg,
-                                 label="",
-                                 fontfamily=NULL,
-                                 fontsize=10,
-                                 hjust=0, vjust=0,
-                                 bottom_margin=5.5,
-                                 newpage=is.null(vp),
-                                 vp=NULL,
-                                 ...) {
-
-  if (is.null(fontfamily)) {
-    gpr <- gpar(fontsize=fontsize, ...)
-  } else {
-    gpr <- gpar(fontfamily=fontfamily, fontsize=fontsize, ...)
-  }
-
-  subtitle <- textGrob(label, x=unit(hjust, "npc"), y=unit(hjust, "npc"),
-                       hjust=hjust, vjust=vjust,
-                       gp=gpr)
-
-  data <- ggplot_build(gg)
-
-  gt <- ggplot_gtable(data)
-  gt <- gtable_add_rows(gt, grobHeight(subtitle), 2)
-  gt <- gtable_add_grob(gt, subtitle, 3, 4, 3, 4, 8, "off", "subtitle")
-  gt <- gtable_add_rows(gt, grid::unit(bottom_margin, "pt"), 3)
-
-  if (newpage) grid.newpage()
-
-  if (is.null(vp)) {
-    grid.draw(gt)
-  } else {
-    if (is.character(vp)) seekViewport(vp) else pushViewport(vp)
-    grid.draw(gt)
-    upViewport()
-  }
-
-  invisible(data)
-
-}
-
 #' My ggplot2 go-to theme
 #'
 #' It requires installing Open Sans Condensed fonts from Google Fonts
@@ -76,14 +18,20 @@ ggplot_with_subtitle <- function(gg,
 #' @param axis axis
 #' @param ticks ticks
 #' @export
-theme_hrbrmstr <- function(base_family = "OpenSans-CondensedLight",
+theme_hrbrmstr <- function(base_family = "NoyhSlim-Light",
                            base_size = 11,
                            strip_text_family = base_family,
                            strip_text_size = 12,
-                           plot_title_family = "OpenSans-CondensedBold",
+                           plot_title_family = "NoyhSlim-Bold",
                            plot_title_size = 18,
-                           plot_title_margin = 16,
-                           axis_title_family = "OpenSans-CondensedLightItalic",
+                           plot_title_margin = 10,
+                           subtitle_family = "NoyhSlim-LightItalic",
+                           subtitle_size = 14,
+                           subtitle_margin = 15,
+                           caption_family = "NoyhSlim-ExtraLight",
+                           caption_size = 9,
+                           caption_margin = 10,
+                           axis_title_family = subtitle_family,
                            axis_title_size = 9,
                            axis_title_just = "rt",
                            grid = TRUE,
@@ -115,8 +63,17 @@ theme_hrbrmstr <- function(base_family = "OpenSans-CondensedLight",
   if (inherits(axis, "character") | axis == TRUE) {
     ret <- ret + theme(axis.line=element_line(color="#2b2b2b", size=0.15))
     if (inherits(axis, "character")) {
-      if (regexpr("X", axis)[1] < 0) ret <- ret + theme(axis.line.x=element_blank())
-      if (regexpr("Y", axis)[1] < 0) ret <- ret + theme(axis.line.y=element_blank())
+      axis <- tolower(axis)
+      if (regexpr("x", axis)[1] < 0) {
+        ret <- ret + theme(axis.line.x=element_blank())
+      } else {
+        ret <- ret + theme(axis.line.x=element_line(color="#2b2b2b", size=0.15))
+      }
+      if (regexpr("y", axis)[1] < 0) {
+        ret <- ret + theme(axis.line.y=element_blank())
+      } else {
+        ret <- ret + theme(axis.line.y=element_line(color="#2b2b2b", size=0.15))
+      }
     }
   } else {
     ret <- ret + theme(axis.line=element_blank())
@@ -127,10 +84,14 @@ theme_hrbrmstr <- function(base_family = "OpenSans-CondensedLight",
   xj <- switch(tolower(substr(axis_title_just, 1, 1)), b=0, l=0, m=0.5, c=0.5, r=1, t=1)
   yj <- switch(tolower(substr(axis_title_just, 2, 2)), b=0, l=0, m=0.5, c=0.5, r=1, t=1)
 
+  ret <- ret + theme(axis.text.x=element_text(margin=margin(t=-10)))
+  ret <- ret + theme(axis.text.y=element_text(margin=margin(r=-10)))
   ret <- ret + theme(axis.title.x=element_text(hjust=xj, size=axis_title_size, family=axis_title_family))
   ret <- ret + theme(axis.title.y=element_text(hjust=yj, size=axis_title_size, family=axis_title_family))
   ret <- ret + theme(strip.text=element_text(hjust=0, size=strip_text_size, family=strip_text_family))
   ret <- ret + theme(plot.title=element_text(hjust=0, size=plot_title_size, margin=margin(b=plot_title_margin), family=plot_title_family))
+  ret <- ret + theme(plot.subtitle=element_text(hjust=0, size=subtitle_size, margin=margin(b=subtitle_margin), family=subtitle_family))
+  ret <- ret + theme(plot.caption=element_text(hjust=1, size=caption_size, margin=margin(t=caption_margin), family=caption_family))
 
   ret
 
