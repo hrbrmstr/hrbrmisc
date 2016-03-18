@@ -1,7 +1,8 @@
 #' My ggplot2 go-to theme
 #'
-#' It requires installing Noyh Slim fonts (not free) unless you change
-#' the font parameters
+#' It requires installing Cabin fonts unless you change the font parameters
+#'
+#' \url{http://www.impallari.com/cabin/}
 #'
 #' @param base_family base font family
 #' @param base_size base font size
@@ -24,17 +25,17 @@
 #' @param axis axis \code{TRUE}, \code{FALSE}, [\code{xy}]
 #' @param ticks ticks
 #' @export
-theme_hrbrmstr <- function(base_family = "NoyhSlim-Light",
+theme_hrbrmstr <- function(base_family="Cabin-Regular",
                            base_size = 11,
                            strip_text_family = base_family,
                            strip_text_size = 12,
-                           plot_title_family = "NoyhSlim-Bold",
+                           plot_title_family="Cabin-Bold",
                            plot_title_size = 18,
                            plot_title_margin = 10,
-                           subtitle_family = "NoyhSlim-LightItalic",
-                           subtitle_size = 14,
+                           subtitle_family="Cabin-Italic",
+                           subtitle_size = 12,
                            subtitle_margin = 15,
-                           caption_family = "NoyhSlim-ExtraLight",
+                           caption_family="Cabin-Regular",
                            caption_size = 9,
                            caption_margin = 10,
                            axis_title_family = subtitle_family,
@@ -175,4 +176,46 @@ theme_hrbrmstr_ex <- function() {
                  plot_title_family="Exo2-Bold",
                  subtitle_family="Exo2-LightItalic",
                  caption_family="Exo2-Thin")
+}
+
+#' Cabin theme
+#'
+#' \url{http://www.impallari.com/cabin/}
+#'
+#' @export
+theme_hrbrmstr_cabin <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+  theme_hrbrmstr(base_family="Cabin-Regular",
+                 plot_title_family="Cabin-Bold",
+                 subtitle_family="Cabin-Italic",
+                 subtitle_size = 12,
+                 caption_family="Cabin-Regular",
+                 grid=grid, axis=axis, ticks=ticks)
+}
+
+#' Noya theme
+#'
+#' @export
+theme_hrbrmstr_noya <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+
+  theme_hrbrmstr(base_family = "NoyhSlim-Light",
+                 plot_title_family = "NoyhSlim-Bold",
+                 subtitle_family = "NoyhSlim-LightItalic",
+                 subtitle_size = 14,
+                 caption_family = "NoyhSlim-ExtraLight",
+                 grid=grid, axis=axis, ticks=ticks)
+}
+
+#' Tungsten theme
+#'
+#' @export
+theme_hrbrmstr_tungsten <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+
+  theme_hrbrmstr(base_family = "Tungsten-Light",
+                 base_size = 14,
+                 plot_title_family = "Tungsten-Semibold",
+                 subtitle_family = "Tungsten-Light",
+                 subtitle_size = 13,
+                 caption_family = "Tungsten-Light",
+                 caption_size = 11,
+                 grid=grid, axis=axis, ticks=ticks)
 }
