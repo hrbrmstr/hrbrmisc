@@ -219,3 +219,39 @@ theme_hrbrmstr_tungsten <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
                  caption_size = 11,
                  grid=grid, axis=axis, ticks=ticks)
 }
+
+
+#' Quattrocento theme
+#'
+#' @export
+theme_hrbrmstr_qc <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+
+  theme_hrbrmstr(base_family = "QuattrocentoSans",
+                 base_size = 14,
+                 plot_title_family = "QuattrocentoSans-Bold",
+                 subtitle_family = "QuattrocentoSans-Italic",
+                 subtitle_size = 13,
+                 caption_family = "QuattrocentoSans",
+                 caption_size = 11,
+                 grid=grid, axis=axis, ticks=ticks)
+}
+
+#' Kerkis theme
+#'
+#' "Kerkis (C) Department of Mathematics, University of the Aegean".
+#'
+#' \url{http://myria.math.aegean.gr/kerkis/}
+#'
+#' @export
+theme_hrbrmstr_kerkis <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+
+  theme_hrbrmstr(base_family = "KerkisSans",
+                 base_size = 12,
+                 plot_title_family = "KerkisSans-Bold",
+                 plot_title_margin = 8,
+                 subtitle_family = "KerkisSans-Italic",
+                 subtitle_size = 14,
+                 caption_family = "KerkisSans",
+                 caption_size = 9,
+                 grid=grid, axis=axis, ticks=ticks)
+}
