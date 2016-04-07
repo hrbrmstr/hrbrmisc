@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_my}
 \title{Myriad Pro theme}
 \usage{
-theme_hrbrmstr_my()
+theme_hrbrmstr_my(...)
 }
 \description{
 Myriad Pro theme

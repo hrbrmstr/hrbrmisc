@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_sf}
 \title{San Francisco theme}
 \usage{
-theme_hrbrmstr_sf()
+theme_hrbrmstr_sf(...)
 }
 \description{
 San Francisco theme
