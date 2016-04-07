@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_noya}
 \title{Noya theme}
 \usage{
-theme_hrbrmstr_noya(grid = TRUE, axis = FALSE, ticks = FALSE)
+theme_hrbrmstr_noya(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 }
 \description{
 Noya theme

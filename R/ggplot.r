@@ -120,62 +120,79 @@ theme_hrbrmstr <- function(base_family="Cabin-Regular",
 #' Open Sans Condensed theme
 #'
 #' @export
-theme_hrbrmstr_os <- function() {
+theme_hrbrmstr_os <- function(...) {
   theme_hrbrmstr(base_family="OpenSans-CondensedLight",
                  plot_title_family="OpenSans-CondensedBold",
                  subtitle_family="OpenSans-CondensedLightItalic",
-                 caption_family="OpenSans-CondensedLight")
+                 caption_family="OpenSans-CondensedLight",
+                 ...)
 }
 
 #' Arial Narrow theme
 #'
 #' @export
-theme_hrbrmstr_ar <- function() {
+theme_hrbrmstr_ar <- function(...) {
   theme_hrbrmstr(base_family="ArialNarrow",
                  plot_title_family="ArialNarrow-Bold",
                  subtitle_family="ArialNarrow-Italic",
-                 caption_family="ArialNarrow")
+                 caption_family="ArialNarrow",
+                 ...)
 }
 
 #' Myriad Pro theme
 #'
 #' @export
-theme_hrbrmstr_my <- function() {
+theme_hrbrmstr_my <- function(...) {
   theme_hrbrmstr(base_family="MyriadPro-Cond",
                  plot_title_family="MyriadPro-BoldCond",
                  subtitle_family="MyriadPro-CondIt",
-                 caption_family="MyriadPro-Cond")
+                 caption_family="MyriadPro-Cond",
+                 ...)
+}
+
+#' Arial Narrow theme
+#'
+#' @export
+theme_hrbrmstr_an <- function(...) {
+  theme_hrbrmstr(base_family="ArialNarrow",
+                 plot_title_family="ArialNarrow-Bold",
+                 subtitle_family="ArialNarrow-Italic",
+                 caption_family="ArialNarrow",
+                 ...)
 }
 
 #' San Francisco theme
 #'
 #' @export
-theme_hrbrmstr_sf <- function() {
+theme_hrbrmstr_sf <- function(...) {
   theme_hrbrmstr(base_family="SanFranciscoText-Light",
                  plot_title_family="SanFranciscoText-Bold",
                  subtitle_family="SanFranciscoText-LightItalic",
-                 caption_family="SanFranciscoText-Light")
+                 caption_family="SanFranciscoText-Light",
+                 ...)
 }
 
 #' Skia theme
 #'
 #' @export
-theme_hrbrmstr_sk <- function() {
+theme_hrbrmstr_sk <- function(...) {
   theme_hrbrmstr(base_family="Skia-Regular_Condensed",
                  plot_title_family="Skia-Regular_Black",
                  subtitle_family="Skia-Regular_Light",
-                 caption_family="Skia-Regular_Light-Condensed")
+                 caption_family="Skia-Regular_Light-Condensed",
+                 ...)
 }
 
 
 #' Exo 2 theme
 #'
 #' @export
-theme_hrbrmstr_ex <- function() {
+theme_hrbrmstr_ex <- function(...) {
   theme_hrbrmstr(base_family="Exo2-Light",
                  plot_title_family="Exo2-Bold",
                  subtitle_family="Exo2-LightItalic",
-                 caption_family="Exo2-Thin")
+                 caption_family="Exo2-Thin",
+                 ...)
 }
 
 #' Cabin theme
@@ -183,32 +200,32 @@ theme_hrbrmstr_ex <- function() {
 #' \url{http://www.impallari.com/cabin/}
 #'
 #' @export
-theme_hrbrmstr_cabin <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+theme_hrbrmstr_cabin <- function(grid = TRUE, axis = FALSE, ticks = FALSE, ...) {
   theme_hrbrmstr(base_family="Cabin-Regular",
                  plot_title_family="Cabin-Bold",
                  subtitle_family="Cabin-Italic",
                  subtitle_size = 12,
                  caption_family="Cabin-Regular",
-                 grid=grid, axis=axis, ticks=ticks)
+                 grid=grid, axis=axis, ticks=ticks, ...)
 }
 
 #' Noya theme
 #'
 #' @export
-theme_hrbrmstr_noya <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+theme_hrbrmstr_noya <- function(grid = TRUE, axis = FALSE, ticks = FALSE, ...) {
 
   theme_hrbrmstr(base_family = "NoyhSlim-Light",
                  plot_title_family = "NoyhSlim-Bold",
                  subtitle_family = "NoyhSlim-LightItalic",
                  subtitle_size = 14,
                  caption_family = "NoyhSlim-ExtraLight",
-                 grid=grid, axis=axis, ticks=ticks)
+                 grid=grid, axis=axis, ticks=ticks, ...)
 }
 
 #' Tungsten theme
 #'
 #' @export
-theme_hrbrmstr_tungsten <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+theme_hrbrmstr_tungsten <- function(grid = TRUE, axis = FALSE, ticks = FALSE, ...) {
 
   theme_hrbrmstr(base_family = "Tungsten-Light",
                  base_size = 14,
@@ -217,14 +234,14 @@ theme_hrbrmstr_tungsten <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
                  subtitle_size = 13,
                  caption_family = "Tungsten-Light",
                  caption_size = 11,
-                 grid=grid, axis=axis, ticks=ticks)
+                 grid=grid, axis=axis, ticks=ticks, ...)
 }
 
 
 #' Quattrocento theme
 #'
 #' @export
-theme_hrbrmstr_qc <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+theme_hrbrmstr_qc <- function(grid = TRUE, axis = FALSE, ticks = FALSE, ...) {
 
   theme_hrbrmstr(base_family = "QuattrocentoSans",
                  base_size = 14,
@@ -233,7 +250,8 @@ theme_hrbrmstr_qc <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
                  subtitle_size = 13,
                  caption_family = "QuattrocentoSans",
                  caption_size = 11,
-                 grid=grid, axis=axis, ticks=ticks)
+                 grid=grid, axis=axis, ticks=ticks,
+                 ...)
 }
 
 #' Kerkis theme
@@ -243,7 +261,7 @@ theme_hrbrmstr_qc <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
 #' \url{http://myria.math.aegean.gr/kerkis/}
 #'
 #' @export
-theme_hrbrmstr_kerkis <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
+theme_hrbrmstr_kerkis <- function(grid = TRUE, axis = FALSE, ticks = FALSE,...) {
 
   theme_hrbrmstr(base_family = "KerkisSans",
                  base_size = 12,
@@ -253,5 +271,5 @@ theme_hrbrmstr_kerkis <- function(grid = TRUE, axis = FALSE, ticks = FALSE) {
                  subtitle_size = 14,
                  caption_family = "KerkisSans",
                  caption_size = 9,
-                 grid=grid, axis=axis, ticks=ticks)
+                 grid=grid, axis=axis, ticks=ticks,...)
 }
