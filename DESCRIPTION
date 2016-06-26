@@ -1,6 +1,6 @@
 Package: hrbrmisc
 Title: What the Package Does (one line, title case)
-Version: 0.0.0.9002
+Version: 0.1.0.9002
 Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")))
 Description: What the package does (one paragraph).
 Depends:
@@ -13,6 +13,7 @@ Suggests:
     grid,
     scales
 Imports:
+    Rcpp (>= 0.11.2),
     ggplot2,
     fastmatch,
     shiny,
@@ -22,3 +23,4 @@ Imports:
     grid,
     formatR
 RoxygenNote: 5.0.1
+LinkingTo: Rcpp
