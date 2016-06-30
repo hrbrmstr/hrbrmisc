@@ -3,7 +3,5 @@
 #' @docType package
 #' @author Bob Rudis (@@hrbrmstr)
 #' @import ggplot2 gtable formatR
-#' @importFrom Rcpp sourceCpp
 #' @importFrom grid grid.draw grid.newpage gpar textGrob grobHeight
-#' @useDynLib hrbrmisc
 NULL
