@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_kerkis}
 \title{Kerkis theme}
 \usage{
-theme_hrbrmstr_kerkis(grid = TRUE, axis = FALSE, ticks = FALSE)
+theme_hrbrmstr_kerkis(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 }
 \description{
 "Kerkis (C) Department of Mathematics, University of the Aegean".

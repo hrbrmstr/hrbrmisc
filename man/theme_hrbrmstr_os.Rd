@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_os}
 \title{Open Sans Condensed theme}
 \usage{
-theme_hrbrmstr_os()
+theme_hrbrmstr_os(...)
 }
 \description{
 Open Sans Condensed theme

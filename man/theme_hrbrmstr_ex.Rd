@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_ex}
 \title{Exo 2 theme}
 \usage{
-theme_hrbrmstr_ex()
+theme_hrbrmstr_ex(...)
 }
 \description{
 Exo 2 theme
