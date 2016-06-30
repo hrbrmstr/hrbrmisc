@@ -13,11 +13,9 @@ Suggests:
     grid,
     scales
 Imports:
-    Rcpp (>= 0.11.2),
     ggplot2,
     fastmatch,
     gtable,
     grid,
     formatR,
-LinkingTo: Rcpp
 RoxygenNote: 5.0.1
