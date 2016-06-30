@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_sk}
 \title{Skia theme}
 \usage{
-theme_hrbrmstr_sk()
+theme_hrbrmstr_sk(...)
 }
 \description{
 Skia theme

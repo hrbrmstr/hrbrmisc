@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_qc}
 \title{Quattrocento theme}
 \usage{
-theme_hrbrmstr_qc(grid = TRUE, axis = FALSE, ticks = FALSE)
+theme_hrbrmstr_qc(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 }
 \description{
 Quattrocento theme

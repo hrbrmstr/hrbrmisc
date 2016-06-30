@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_cabin}
 \title{Cabin theme}
 \usage{
-theme_hrbrmstr_cabin(grid = TRUE, axis = FALSE, ticks = FALSE)
+theme_hrbrmstr_cabin(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 }
 \description{
 \url{http://www.impallari.com/cabin/}

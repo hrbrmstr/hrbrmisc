@@ -4,7 +4,7 @@
 \alias{theme_hrbrmstr_tungsten}
 \title{Tungsten theme}
 \usage{
-theme_hrbrmstr_tungsten(grid = TRUE, axis = FALSE, ticks = FALSE)
+theme_hrbrmstr_tungsten(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 }
 \description{
 Tungsten theme
