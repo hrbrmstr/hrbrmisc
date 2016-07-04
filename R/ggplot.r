@@ -11,6 +11,7 @@
 #' @param plot_title_family plot tilte family
 #' @param plot_title_size plot title font size
 #' @param plot_title_margin plot title margin
+#' @param plot_margin plot margin
 #' @param subtitle_family plot subtitle family
 #' @param subtitle_size plot subtitle size
 #' @param subtitle_margin plot subtitle margin
@@ -32,6 +33,7 @@ theme_hrbrmstr <- function(base_family="Cabin-Regular",
                            plot_title_family="Cabin-Bold",
                            plot_title_size = 18,
                            plot_title_margin = 10,
+                           plot_margin = margin(10, 10, 10, 10),
                            subtitle_family="Cabin-Italic",
                            subtitle_size = 12,
                            subtitle_margin = 15,
@@ -112,6 +114,7 @@ theme_hrbrmstr <- function(base_family="Cabin-Regular",
   ret <- ret + theme(plot.title=element_text(hjust=0, size=plot_title_size, margin=margin(b=plot_title_margin), family=plot_title_family))
   ret <- ret + theme(plot.subtitle=element_text(hjust=0, size=subtitle_size, margin=margin(b=subtitle_margin), family=subtitle_family))
   ret <- ret + theme(plot.caption=element_text(hjust=1, size=caption_size, margin=margin(t=caption_margin), family=caption_family))
+  ret <- ret + theme(plot.margin=plot_margin)
 
   ret
 
