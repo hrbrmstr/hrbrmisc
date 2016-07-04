@@ -7,9 +7,10 @@
 theme_hrbrmstr(base_family = "Cabin-Regular", base_size = 11,
   strip_text_family = base_family, strip_text_size = 12,
   plot_title_family = "Cabin-Bold", plot_title_size = 18,
-  plot_title_margin = 10, subtitle_family = "Cabin-Italic",
-  subtitle_size = 12, subtitle_margin = 15,
-  caption_family = "Cabin-Regular", caption_size = 9, caption_margin = 10,
+  plot_title_margin = 10, plot_margin = margin(10, 10, 10, 10),
+  subtitle_family = "Cabin-Italic", subtitle_size = 12,
+  subtitle_margin = 15, caption_family = "Cabin-Regular",
+  caption_size = 9, caption_margin = 10,
   axis_title_family = subtitle_family, axis_title_size = 9,
   axis_title_just = "rt", grid = TRUE, axis = FALSE, ticks = FALSE)
 }
@@ -27,6 +28,8 @@ theme_hrbrmstr(base_family = "Cabin-Regular", base_size = 11,
 \item{plot_title_size}{plot title font size}
 
 \item{plot_title_margin}{plot title margin}
+
+\item{plot_margin}{plot margin}
 
 \item{subtitle_family}{plot subtitle family}
 
