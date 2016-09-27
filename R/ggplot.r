@@ -153,6 +153,17 @@ theme_hrbrmstr_my <- function(...) {
                  ...)
 }
 
+#' Hind theme
+#'
+#' @export
+theme_hrbrmstr_hind <- function(...) {
+  theme_hrbrmstr(base_family="Hind",
+                 plot_title_family="Hind-Bold",
+                 subtitle_family="Hind-SemiBold",
+                 caption_family="Hind-Light",
+                 ...)
+}
+
 #' Arial Narrow theme
 #'
 #' @export
