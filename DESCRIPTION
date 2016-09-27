@@ -17,4 +17,5 @@ Imports:
     gtable,
     grid,
     formatR,
+    httr
 RoxygenNote: 5.0.1
