@@ -9,6 +9,6 @@
 Personal R pkg
 }
 \author{
-Bob Rudis (@hrbrmstr)
+Bob Rudis (bob@rud.is)
 }
 
