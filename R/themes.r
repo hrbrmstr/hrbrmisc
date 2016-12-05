@@ -26,16 +26,16 @@
 #' @export
 theme_hrbrmstr <- function(base_family="Hind",
                            base_size = 11,
-                           strip_text_family = "Hind-SemiBold",
+                           strip_text_family = "Hind Medium",
                            strip_text_size = 12,
-                           plot_title_family="Hind-Bold",
+                           plot_title_family="Hind",
                            plot_title_size = 18,
                            plot_title_margin = 10,
-                           plot_margin = margin(20, 20, 20, 20),
-                           subtitle_family="Hind-Medium",
+                           plot_margin = margin(30, 30, 30, 30),
+                           subtitle_family="Hind Medium",
                            subtitle_size = 12,
                            subtitle_margin = 15,
-                           caption_family="Hind-Light",
+                           caption_family="Hind Light",
                            caption_size = 9,
                            caption_margin = 10,
                            axis_title_family = subtitle_family,
@@ -108,10 +108,10 @@ theme_hrbrmstr <- function(base_family="Hind",
   ret <- ret + theme(axis.title=element_text(size=axis_title_size, family=axis_title_family))
   ret <- ret + theme(axis.title.x=element_text(hjust=xj, size=axis_title_size, family=axis_title_family))
   ret <- ret + theme(axis.title.y=element_text(hjust=yj, size=axis_title_size, family=axis_title_family))
-  ret <- ret + theme(strip.text=element_text(hjust=0, size=strip_text_size, family=strip_text_family))
+  ret <- ret + theme(strip.text=element_text(hjust=0, size=strip_text_size, face="bold", family=strip_text_family))
   ret <- ret + theme(panel.spacing.x=grid::unit(2, "lines"))
   ret <- ret + theme(panel.spacing.y=grid::unit(2, "lines"))
-  ret <- ret + theme(plot.title=element_text(hjust=0, size=plot_title_size, margin=margin(b=plot_title_margin), family=plot_title_family))
+  ret <- ret + theme(plot.title=element_text(hjust=0, size=plot_title_size, margin=margin(b=plot_title_margin), face="bold", family=plot_title_family))
   ret <- ret + theme(plot.subtitle=element_text(hjust=0, size=subtitle_size, margin=margin(b=subtitle_margin), family=subtitle_family))
   ret <- ret + theme(plot.caption=element_text(hjust=1, size=caption_size, margin=margin(t=caption_margin), family=caption_family))
   ret <- ret + theme(plot.margin=plot_margin)
@@ -158,10 +158,10 @@ theme_hrbrmstr_my <- function(...) {
 #' @export
 theme_hrbrmstr_hind <- function(...) {
   theme_hrbrmstr(base_family="Hind",
-                 plot_title_family="Hind-Bold",
-                 strip_text_family="Hind-SemiBold",
-                 subtitle_family="Hind-Medium",
-                 caption_family="Hind-Light",
+                 plot_title_family="Hind",
+                 strip_text_family="Hind SemiBold",
+                 subtitle_family="Hind Medium",
+                 caption_family="Hind Light",
                  ...)
 }
 
