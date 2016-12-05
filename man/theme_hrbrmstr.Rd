@@ -5,11 +5,11 @@
 \title{My ggplot2 go-to theme}
 \usage{
 theme_hrbrmstr(base_family = "Hind", base_size = 11,
-  strip_text_family = "Hind-SemiBold", strip_text_size = 12,
-  plot_title_family = "Hind-Bold", plot_title_size = 18,
-  plot_title_margin = 10, plot_margin = margin(20, 20, 20, 20),
-  subtitle_family = "Hind-Medium", subtitle_size = 12,
-  subtitle_margin = 15, caption_family = "Hind-Light", caption_size = 9,
+  strip_text_family = "Hind Medium", strip_text_size = 12,
+  plot_title_family = "Hind", plot_title_size = 18,
+  plot_title_margin = 10, plot_margin = margin(30, 30, 30, 30),
+  subtitle_family = "Hind Medium", subtitle_size = 12,
+  subtitle_margin = 15, caption_family = "Hind Light", caption_size = 9,
   caption_margin = 10, axis_title_family = subtitle_family,
   axis_title_size = 9, axis_title_just = "rt", grid = TRUE,
   axis = FALSE, ticks = FALSE)
