@@ -1,0 +1,9 @@
+dependencies:
+- name: jstree
+  version: 3.2.1
+  src: htmlwidgets/lib/jqtree
+  script:
+    - jquery.min.js
+    - jquery.json-view.min.js
+  stylesheet:
+    - jquery.json-view.min.css

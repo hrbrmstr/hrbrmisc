@@ -14,6 +14,10 @@
 #' @importFrom purrr flatten_df map map_df map_chr map_lgl map_int %||% safely
 #' @importFrom readr read_csv type_convert
 #' @importFrom scales comma percent dollar
+#' @import htmlwidgets htmltools curl
+#' @importFrom base64enc base64encode
+#' @importFrom jsonlite fromJSON toJSON
+
 NULL
 
 
