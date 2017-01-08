@@ -3,13 +3,17 @@
 #' @name hrbrmisc
 #' @docType package
 #' @author Bob Rudis (bob@@rud.is)
-#' @import ggplot2 gtable formatR
+#' @import stringi
+#' @import broom
+#' @import ggplot2
+#' @import gtable
+#' @import formatR
 #' @importFrom grid grid.draw grid.newpage gpar textGrob grobHeight
 #' @importFrom httr GET HEAD POST
-#' @importFrom dplyr count_ mutate %>%
-#' @import broom
+#' @importFrom dplyr count_ mutate %>% tbl_df select
 #' @importFrom purrr flatten_df map map_df map_chr map_lgl map_int %||% safely
-#' @import stringi
+#' @importFrom readr read_csv type_convert
+#' @importFrom scales comma percent dollar
 NULL
 
 
@@ -26,3 +30,15 @@ NULL
 #' @export
 #' @rdname hrbrmisc-exports
 NULL
+
+#' @name percent
+#' @export
+#' @rdname hrbrmisc-exports
+
+#' @name comma
+#' @export
+#' @rdname hrbrmisc-exports
+
+#' @name dollar
+#' @export
+#' @rdname hrbrmisc-exports
