@@ -2,5 +2,5 @@
 #'
 #' @export
 get_public_dns_servers <- function() {
-  read_csv("http://public-dns.info/nameservers.csv")
+  suppressMessages(readr::read_csv("http://public-dns.info/nameservers.csv"))
 }

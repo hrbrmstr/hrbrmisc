@@ -5,7 +5,8 @@ Authors@R: c(person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre")
 Maintainer: Bob Rudis <bob@rud.is>
 Description: Tools and functions primarily of use to hrbrmstr.
 Depends:
-    R (>= 3.0.0)
+    R (>= 3.2.0),
+    fastmatch
 License: MIT + file LICENSE
 LazyData: true
 Suggests:
@@ -14,10 +15,10 @@ Suggests:
     scales
 Imports:
     ggplot2,
-    fastmatch,
     gtable,
     grid,
     formatR,
+    readr,
     httr,
     dplyr,
     broom,

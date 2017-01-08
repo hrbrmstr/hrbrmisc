@@ -22,10 +22,10 @@
 
 #' @rdname match_shortcuts
 #' @export
-"%notin%" <- function(x, table) !match(x, table, nomatch = 0) > 0
+"%!in%" <- function(x, table) !match(x, table, nomatch = 0) > 0
 
 #' @rdname match_shortcuts
 #' @export
-"%notfmin%" <- function(x, table) {
+"%!fmin%" <- function(x, table) {
   !fmatch(x, table, nomatch = 0) > 0
 }
