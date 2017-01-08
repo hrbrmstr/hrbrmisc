@@ -37,5 +37,6 @@ Imports:
     htmltools,
     curl,
     jsonlite,
-    base64enc
+    base64enc,
+    seleniumPipes
 RoxygenNote: 5.0.1
