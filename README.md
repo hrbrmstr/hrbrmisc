@@ -56,7 +56,7 @@ Features
 
 -   `gbarplot`: Quick way to replace the handy 'barplot'
 -   `quick_map`: Plot a fortified map using coord\_quickmap
--   \`theme\_hrbrmstr My ggplot2 go-to theme
+-   `theme_hrbrmstr`: My ggplot2 go-to theme
 -   `title_left`: Completely flush-left-align ggplot2 title
 
 ### "Cyber"
