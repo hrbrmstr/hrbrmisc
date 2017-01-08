@@ -17,6 +17,7 @@
 #' @import htmlwidgets htmltools curl
 #' @importFrom base64enc base64encode
 #' @importFrom jsonlite fromJSON toJSON
+#' @importFrom seleniumPipes remoteDr
 
 NULL
 
