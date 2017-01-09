@@ -120,6 +120,20 @@ theme_hrbrmstr <- function(base_family="Hind",
 
 }
 
+
+#' InterFace theme
+#'
+#' @note PNG OUTPUT ONLY; The font is horribadly broken from Adobe TypeKit
+#' @export
+theme_hrbrmstr_if <- function(...) {
+  theme_hrbrmstr(base_family="InterFace-Regular",
+                 strip_text_family="InterFace-Bold",
+                 plot_title_family="InterFace-XBold",
+                 subtitle_family="InterFace-Light",
+                 caption_family="InterFace-Thin",
+                 ...)
+}
+
 #' Open Sans Condensed theme
 #'
 #' @export
