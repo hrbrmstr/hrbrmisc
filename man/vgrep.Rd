@@ -2,6 +2,7 @@
 % Please edit documentation in R/grep.r
 \name{vgrep}
 \alias{ggrep}
+\alias{ggrepl}
 \alias{igrep}
 \alias{igrepl}
 \alias{lgrep}
@@ -19,6 +20,8 @@ vigrep(x, pattern)
 
 igrepl(x, pattern)
 
+ggrepl(x, pattern)
+
 lgrep(x, pattern)
 }
 \arguments{
@@ -35,6 +38,7 @@ Each puts the object first then the pattern and auto-fills in certain params
   \item \code{vgrep} is the equivalent of \code{grep(pattern, x, value=TRUE)}
   \item \code{igrep} is the equivalent of \code{grep(pattern, x, ignore.case=TRUE)}
   \item \code{vigrep} is the equivalent of \code{grep(pattern, x, value=TRUE, ignore.case=TRUE)}
+  \item \code{ggrepl} is the equivalent of \code{grepl(pattern, x)}
   \item \code{igrepl} is the equivalent of \code{grepl(pattern, x, ignore.case=TRUE)}
   \item \code{lgrep} is the equivalent of \code{grepl(pattern, x)}
 }

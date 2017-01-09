@@ -7,6 +7,7 @@
 #'   \item \code{vgrep} is the equivalent of \code{grep(pattern, x, value=TRUE)}
 #'   \item \code{igrep} is the equivalent of \code{grep(pattern, x, ignore.case=TRUE)}
 #'   \item \code{vigrep} is the equivalent of \code{grep(pattern, x, value=TRUE, ignore.case=TRUE)}
+#'   \item \code{ggrepl} is the equivalent of \code{grepl(pattern, x)}
 #'   \item \code{igrepl} is the equivalent of \code{grepl(pattern, x, ignore.case=TRUE)}
 #'   \item \code{lgrep} is the equivalent of \code{grepl(pattern, x)}
 #' }
@@ -31,6 +32,10 @@ vigrep <- function(x, pattern) { grep(pattern, x, value=TRUE, ignore.case=TRUE) 
 #' @rdname vgrep
 #' @export
 igrepl <- function(x, pattern) { grepl(pattern, x, ignore.case=TRUE) }
+
+#' @rdname vgrep
+#' @export
+ggrepl <- function(x, pattern) { grepl(pattern, x) }
 
 #' @rdname vgrep
 #' @export

@@ -5,7 +5,9 @@
 \title{Setup connection to my local phantomjs webdriver}
 \usage{
 spectre(host = Sys.getenv("PHANTOM_WEBDRIVER_HOST"),
-  port = Sys.getenv("PHANTOM_WEBDRIVER_PORT"))
+  port = Sys.getenv("PHANTOM_WEBDRIVER_PORT"),
+  extra = list(phantomjs.page.settings.userAgent =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.51 Safari/537.36"))
 }
 \arguments{
 \item{host}{host of the phantomjs webdriver instance}
