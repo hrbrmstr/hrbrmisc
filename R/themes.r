@@ -121,16 +121,39 @@ theme_hrbrmstr <- function(base_family="Hind",
 }
 
 
-#' InterFace theme
+#' Museo Sans theme
 #'
-#' @note PNG OUTPUT ONLY; The font is horribadly broken from Adobe TypeKit
 #' @export
-theme_hrbrmstr_if <- function(...) {
-  theme_hrbrmstr(base_family="InterFace-Regular",
-                 strip_text_family="InterFace-Bold",
-                 plot_title_family="InterFace-XBold",
-                 subtitle_family="InterFace-Light",
-                 caption_family="InterFace-Thin",
+theme_hrbrmstr_ms <- function(...) {
+  theme_hrbrmstr(base_family="MuseoSans-300",
+                 strip_text_family="MuseoSans-700",
+                 plot_title_family="MuseoSans-900",
+                 subtitle_family="MuseoSans-500",
+                 caption_family="MuseoSans-100",
+                 ...)
+}
+
+#' Museo Sans Condensed theme
+#'
+#' @export
+theme_hrbrmstr_msc <- function(...) {
+  theme_hrbrmstr(base_family="MuseoSansCond-300",
+                 strip_text_family="MuseoSansCond-700",
+                 plot_title_family="MuseoSansCond-900",
+                 subtitle_family="MuseoSansCond-500",
+                 caption_family="MuseoSansCond-100",
+                 ...)
+}
+
+#' Museo Sans Rounded
+#'
+#' @export
+theme_hrbrmstr_msr <- function(...) {
+  theme_hrbrmstr(base_family="MuseoSansRounded-300",
+                 strip_text_family="MuseoSansRounded-700",
+                 plot_title_family="MuseoSansRounded-900",
+                 subtitle_family="MuseoSansRounded-500",
+                 caption_family="MuseoSansRounded-100",
                  ...)
 }
 
