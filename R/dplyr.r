@@ -17,3 +17,18 @@ count_pct <- function(x, ..., wt=NULL, sort=TRUE) {
   mutate(counted, pct=n/100, percent=scales::percent(pct))
 
 }
+
+#' Make column names great again
+#'
+#' @param col_names character vector
+#' @return lower-case, no punct, underscored strings
+#' @export
+mcga <- function(x) {
+
+  x <- tolower(x)
+  x <- gsub("[[:space:][:punct:]]+", " ", x)
+  x <- trimws(x)
+  x <- gsub(" ", "_", x)
+  x
+
+}
