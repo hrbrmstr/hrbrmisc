@@ -64,6 +64,7 @@ Features
 -   `hhs_breaches`: Retrieve current public list of U.S. Health & Human Services Breaches
 -   `host_up`: Is a host listening on a port (TCP)?
 -   `get_public_dns_servers`: Get public DNS servers list
+-   `get_dotgov`: Get `.gov` domains
 
 ### JSON-ish
 
