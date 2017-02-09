@@ -12,4 +12,3 @@ theme_hrbrmstr_kerkis(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 \details{
 \url{http://myria.math.aegean.gr/kerkis/}
 }
-

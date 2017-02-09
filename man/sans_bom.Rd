@@ -24,10 +24,9 @@ library(httr)
 foo <- GET("http://www.claritin.com/webservice/allergyforecast.php?zip=33956")
 sans_bom(foo)
 }
-\author{
-@hrbrmstr
-}
 \references{
 \href{http://www.unicode.org/faq/utf_bom.html}{UTF-8, UTF-16, UTF-32 & BOM}
 }
-
+\author{
+@hrbrmstr
+}

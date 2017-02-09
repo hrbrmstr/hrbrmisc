@@ -9,4 +9,3 @@ hhs_breaches()
 \description{
 Recrods only for those impacting 500 or more persons
 }
-

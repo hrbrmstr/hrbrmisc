@@ -9,4 +9,3 @@ theme_hrbrmstr_noya(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 \description{
 Noya theme
 }
-

@@ -9,15 +9,14 @@ count_pct(x, ..., wt = NULL, sort = TRUE)
 \arguments{
 \item{x}{a \code{tbl} to count}
 
+\item{\dots}{variables to group by}
+
 \item{wt}{(Optional) If omitted, will count the number of rows. If specified, will
 perform a "weighted" tally by summing the (non-missing) values of variable wt.}
 
 \item{sort}{unlike \code{dplyr::count} this defaults to \code{TRUE}}
-
-\item{\dots}{variables to group by}
 }
 \description{
 This performs the equivalent of: \cr\cr
 \code{count(x, col) \%>\% mutate(pct=n/100, percent=scales::percent(pct))}
 }
-

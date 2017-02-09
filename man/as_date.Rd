@@ -14,4 +14,3 @@ as_date(x, ...)
 \description{
 Shortcut to avoid specifying origin
 }
-

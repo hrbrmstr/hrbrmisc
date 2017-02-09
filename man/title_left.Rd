@@ -15,4 +15,3 @@ title_left(gg)
 \description{
 Completely flush-left-align ggplot2 title
 }
-

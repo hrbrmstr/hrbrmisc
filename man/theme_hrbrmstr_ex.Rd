@@ -9,4 +9,3 @@ theme_hrbrmstr_ex(...)
 \description{
 Exo 2 theme
 }
-

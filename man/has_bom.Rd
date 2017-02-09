@@ -34,10 +34,9 @@ has_bom(cfoo)
 
 has_bom(GET("http://google.com"))
 }
-\author{
-@hrbrmstr
-}
 \references{
 \href{http://www.unicode.org/faq/utf_bom.html}{UTF-8, UTF-16, UTF-32 & BOM}
 }
-
+\author{
+@hrbrmstr
+}

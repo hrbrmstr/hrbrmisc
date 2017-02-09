@@ -39,4 +39,4 @@ Imports:
     jsonlite,
     base64enc,
     seleniumPipes
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.0

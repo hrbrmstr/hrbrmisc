@@ -9,4 +9,3 @@ theme_hrbrmstr_my(...)
 \description{
 Myriad Pro theme
 }
-

@@ -15,4 +15,3 @@ numeric vector
 \description{
 Remove commas & whitespace, primarily
 }
-

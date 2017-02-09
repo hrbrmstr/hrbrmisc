@@ -9,4 +9,3 @@ theme_hrbrmstr_msc(...)
 \description{
 Museo Sans Condensed theme
 }
-
