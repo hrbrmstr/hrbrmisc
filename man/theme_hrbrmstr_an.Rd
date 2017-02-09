@@ -9,4 +9,3 @@ theme_hrbrmstr_an(...)
 \description{
 Arial Narrow theme
 }
-

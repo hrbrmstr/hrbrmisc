@@ -9,4 +9,3 @@ get_dotgov()
 \description{
 Retrieves full list from \code{https://github.com/GSA/data/tree/gh-pages/dotgov-domains}
 }
-

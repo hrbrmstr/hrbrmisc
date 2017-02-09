@@ -23,4 +23,3 @@ This function will try to automatically determine what column in
 \code{map_data} should be used for the \code{map_id}. Specifying a
 value overrides this heuristic.
 }
-

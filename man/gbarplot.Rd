@@ -2,10 +2,10 @@
 % Please edit documentation in R/gbarplot.r
 \name{gbarplot}
 \alias{gbarplot}
-\alias{gbarplot.data.frame}
-\alias{gbarplot.list}
 \alias{gbarplot.table}
 \alias{gbarplot.vector}
+\alias{gbarplot.list}
+\alias{gbarplot.data.frame}
 \title{Quick way to replace the handy \code{barplot}}
 \usage{
 gbarplot(x, fill = "maroon", col = "black")
@@ -21,4 +21,3 @@ gbarplot(x, fill = "maroon", col = "black")
 \description{
 Quick way to replace the handy \code{barplot}
 }
-

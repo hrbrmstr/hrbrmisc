@@ -9,4 +9,3 @@ theme_hrbrmstr_tungsten(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 \description{
 Tungsten theme
 }
-

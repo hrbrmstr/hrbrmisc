@@ -9,4 +9,3 @@ theme_hrbrmstr_sk(...)
 \description{
 Skia theme
 }
-

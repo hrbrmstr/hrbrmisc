@@ -15,4 +15,3 @@ vector of decoded strings
 \description{
 Decode a quoted printable string
 }
-

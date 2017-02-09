@@ -9,4 +9,3 @@ has_env(x)
 \description{
 Does the environment variable exist?
 }
-

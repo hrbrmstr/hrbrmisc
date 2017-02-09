@@ -9,4 +9,3 @@ theme_hrbrmstr_sf(...)
 \description{
 San Francisco theme
 }
-

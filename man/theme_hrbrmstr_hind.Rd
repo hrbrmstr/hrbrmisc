@@ -9,4 +9,3 @@ theme_hrbrmstr_hind(...)
 \description{
 Hind theme
 }
-

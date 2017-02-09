@@ -9,4 +9,3 @@ theme_hrbrmstr_qc(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 \description{
 Quattrocento theme
 }
-

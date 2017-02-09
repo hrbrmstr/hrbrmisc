@@ -15,4 +15,3 @@ lower-case, no punct, underscored strings
 \description{
 Make column names great again
 }
-

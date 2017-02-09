@@ -25,4 +25,3 @@ this function will test whether the node(s) is/are listening for
 connections. Fully vectorized with customizable timeouts and options
 (on by default) status messages.
 }
-

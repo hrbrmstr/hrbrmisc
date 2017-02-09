@@ -80,4 +80,3 @@ json_view(fromJSON("https://collector.torproject.org/index.json",
                    simplifyVector=FALSE))
 }
 }
-

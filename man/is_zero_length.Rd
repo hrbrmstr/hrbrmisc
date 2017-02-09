@@ -22,4 +22,3 @@ Makes a broad assumption about \code{x} being a singluar object
 \seealso{
 Other purr_predicates: \code{\link{is_empty_string}}
 }
-

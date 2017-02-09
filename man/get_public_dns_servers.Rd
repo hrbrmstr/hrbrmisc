@@ -9,4 +9,3 @@ get_public_dns_servers()
 \description{
 Get public DNS servers list
 }
-

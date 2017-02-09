@@ -9,4 +9,3 @@ theme_hrbrmstr_os(...)
 \description{
 Open Sans Condensed theme
 }
-

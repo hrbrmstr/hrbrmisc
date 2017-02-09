@@ -9,4 +9,3 @@ theme_hrbrmstr_cabin(grid = TRUE, axis = FALSE, ticks = FALSE, ...)
 \description{
 \url{http://www.impallari.com/cabin/}
 }
-

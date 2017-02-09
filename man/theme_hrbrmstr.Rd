@@ -59,4 +59,3 @@ theme_hrbrmstr(base_family = "Hind", base_size = 11,
 \description{
 It requires installing Hind fonts unless you change the font parameters
 }
-

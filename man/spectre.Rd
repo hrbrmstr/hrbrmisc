@@ -23,4 +23,3 @@ phantomjs node active.
 Relies on two environment variables being set since you could theoretically
 target the node and exploit webkit vulns if I hardcoded the server info.
 }
-

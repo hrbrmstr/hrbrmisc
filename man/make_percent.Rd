@@ -15,4 +15,3 @@ numeric vector
 \description{
 Remove "%" primarily, convert to numeric & divide by 100
 }
-

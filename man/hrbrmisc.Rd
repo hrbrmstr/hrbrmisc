@@ -11,4 +11,3 @@ Personal R pkg
 \author{
 Bob Rudis (bob@rud.is)
 }
-
