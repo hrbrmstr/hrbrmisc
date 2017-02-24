@@ -11,13 +11,14 @@
 #' @importFrom grid grid.draw grid.newpage gpar textGrob grobHeight
 #' @importFrom httr GET HEAD POST
 #' @importFrom dplyr count_ mutate %>% tbl_df select
-#' @importFrom purrr flatten_df map map_df map_chr map_lgl map_int %||% safely
-#' @importFrom readr read_csv type_convert
+#' @importFrom purrr flatten_df map map_df map_chr map_lgl map_int %||% safely walk
+#' @importFrom readr read_csv type_convert read_lines write_lines
 #' @importFrom scales comma percent dollar
 #' @import htmlwidgets htmltools curl
 #' @importFrom base64enc base64encode
 #' @importFrom jsonlite fromJSON toJSON
 #' @importFrom seleniumPipes remoteDr
+#' @import devtools
 
 NULL
 
