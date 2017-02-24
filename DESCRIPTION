@@ -3,7 +3,6 @@ Title: Personal 'R' Package of 'hrbrmstr'
 Version: 0.2.0
 Authors@R: c(
       person("Bob", "Rudis", role = c("aut", "cre"),
-             comment = "R iterface",
              email = "bob@rud.is"),
       person("Vadim", "Kiryukhin", role = c("ctb", "cph"),
              comment = "vkbeautify library"),
@@ -38,5 +37,6 @@ Imports:
     curl,
     jsonlite,
     base64enc,
-    seleniumPipes
+    seleniumPipes,
+    devtools
 RoxygenNote: 6.0.0
