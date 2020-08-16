@@ -54,5 +54,5 @@ qp_after <- c("", "\001", "\002", "\003", "\004", "\005", "\006", "\a", "\b", "\
 #' @return vector of decoded strings
 #' @export
 qp_decode <- function(x) {
-  stringi::stri_replace_all_fixed(qp_encoded, qp_before, qp_after, vectorize_all=FALSE)
+  stringi::stri_replace_all_fixed(x, qp_before, qp_after, vectorize_all=FALSE)
 }
