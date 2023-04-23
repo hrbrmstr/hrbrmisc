@@ -1,3 +1,5 @@
+# nolint start
+
 #' Clean up a character vector to make it numeric
 #'
 #' Remove commas & whitespace, primarily
@@ -15,3 +17,5 @@ make_numeric <- function(x) { as.numeric(gsub(",", "", trimws(x))) }
 #' @return numeric vector
 #' @export
 make_percent <- function(x) { as.numeric(gsub("%", "", trimws(x))) / 100 }
+
+# nolint end

@@ -20,5 +20,7 @@ predicate (or any functional predicate taking a single object as a value).
 Works as a standalone vectorized function equally as well.
 }
 \seealso{
-Other purr_predicates: \code{\link{is_zero_length}}
+Other purr_predicates: 
+\code{\link{is_zero_length}()}
 }
+\concept{purr_predicates}

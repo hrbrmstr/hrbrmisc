@@ -20,5 +20,7 @@ predicate (or any functional predicate taking a single object as a value).
 Makes a broad assumption about \code{x} being a singluar object
 }
 \seealso{
-Other purr_predicates: \code{\link{is_empty_string}}
+Other purr_predicates: 
+\code{\link{is_empty_string}()}
 }
+\concept{purr_predicates}

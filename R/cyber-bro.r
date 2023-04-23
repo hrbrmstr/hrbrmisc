@@ -1,3 +1,5 @@
+# nolint start
+
 #' Bro conn-log connection state values and descriptions
 #'
 #' Quick ref:
@@ -42,7 +44,8 @@ data.frame(
     "Responder sent a SYN ACK followed by a RST, we never saw a SYN from the (purported) originator.",
     "Originator sent a SYN followed by a FIN, we never saw a SYN ACK from the responder (hence the connection was “half” open).",
     "Responder sent a SYN ACK followed by a FIN, we never saw a SYN from the originator.",
-    "No SYN seen, just midstream traffic (a 'partial connection' that was not later closed'"),
-  stringsAsFactors=FALSE
-) %>% dplyr::tbl_df() -> bro_conn_states
+    "No SYN seen, just midstream traffic (a 'partial connection' that was not later closed'")
+) -> bro_conn_states
 
+
+# nolint end

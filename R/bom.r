@@ -1,3 +1,5 @@
+# nolint start
+
 #' Tests whether a raw httr response or character vector has a byte order mark (BOM)
 #'
 #' \href{https://en.wikipedia.org/wiki/Byte_order_mark}{What is a byte order mark?}
@@ -93,3 +95,5 @@ sans_bom <- function(resp) {
     stop("Expected either an httr::response object or a character", call.=FALSE)
   }
 }
+
+# nolint end

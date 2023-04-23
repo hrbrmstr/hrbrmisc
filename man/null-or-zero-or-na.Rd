@@ -17,5 +17,7 @@ x \%||0NA\% y
 Makes a broad assumption about \code{x} being a singluar object
 }
 \seealso{
-Other shortcuts: \code{\link{null-or-zero}}
+Other shortcuts: 
+\code{\link{null-or-zero}}
 }
+\concept{shortcuts}

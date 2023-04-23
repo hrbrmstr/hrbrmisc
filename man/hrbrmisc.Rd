@@ -3,11 +3,7 @@
 \docType{package}
 \name{hrbrmisc}
 \alias{hrbrmisc}
-\alias{hrbrmisc-package}
 \title{Personal R pkg}
-\description{
-Personal R pkg
-}
 \author{
 Bob Rudis (bob@rud.is)
 }

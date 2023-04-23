@@ -1,3 +1,5 @@
+# nolint start
+
 #' Shortcuts for \code{fmatch} and \code{match} operations
 #'
 #' \code{fmatch} is a faster version of the built-in \code{match()} function. It is
@@ -29,3 +31,5 @@
 "%!fmin%" <- function(x, table) {
   !fmatch(x, table, nomatch = 0) > 0
 }
+
+# nolint end

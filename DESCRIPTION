@@ -1,17 +1,12 @@
 Package: hrbrmisc
 Title: Personal 'R' Package of 'hrbrmstr'
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
       person("Bob", "Rudis", role = c("aut", "cre"),
-             email = "bob@rud.is"),
-      person("Vadim", "Kiryukhin", role = c("ctb", "cph"),
-             comment = "vkbeautify library"),
-      person("Ivan", "Sagalaev", role = c("ctb", "cph"),
-             comment = "highlight.js library"),
-      person("Anton", "Bazhenov", role = c("ctb", "cph"),
-             comment = "jquery.json-view.js library")
+             email = "bob@rud.is")
     )
 Maintainer: Bob Rudis <bob@rud.is>
+Encoding: UTF-8
 Description: Tools and functions primarily of use to hrbrmstr.
 Depends:
     R (>= 3.2.0),
@@ -20,23 +15,7 @@ License: MIT + file LICENSE
 LazyData: true
 Suggests:
     testthat,
-    ggthemes,
     scales
 Imports:
-    ggplot2,
-    gtable,
-    grid,
-    formatR,
-    readr,
-    httr,
-    dplyr,
-    broom,
-    purrr,
-    htmlwidgets,
-    htmltools,
-    curl,
-    jsonlite,
-    base64enc,
-    seleniumPipes,
-    devtools
-RoxygenNote: 6.0.0
+    stringi
+RoxygenNote: 7.2.3

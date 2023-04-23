@@ -1,3 +1,5 @@
+# nolint start
+
 #' Is a string equivalent to \code{""}
 #'
 #' Designed for use as a \code{purr::keep} or \code{purrr::discard}
@@ -47,3 +49,5 @@ is_zero_length <- function(x) { length(x) == 0 }
 #' @export
 #' @family shortcuts
 `%||0NA%` <- function (x, y) { if (is.null(x) | length(x) == 0 | is.na(x)) y else x }
+
+# nolint end

@@ -1,3 +1,5 @@
+# nolint start
+
 qp_before <- c("=00", "=01", "=02", "=03", "=04", "=05", "=06", "=07", "=08", "=09", "=0A",
               "=0B", "=0C", "=0D", "=0E", "=0F", "=10", "=11", "=12", "=13", "=14", "=15",
               "=16", "=17", "=18", "=19", "=1A", "=1B", "=1C", "=1D", "=1E", "=1F", "=20",
@@ -57,3 +59,5 @@ qp_decode <- function(x) {
   x <- stringi::stri_replace_all_fixed(x, qp_before, qp_after, vectorize_all=FALSE)
   stringi::stri_replace_all_fixed(x, '=3D', '=', vectorize_all=FALSE)
 }
+
+# nolint end
