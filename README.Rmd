@@ -32,7 +32,7 @@ hrbrpkghelpr::install_block()
 ## Usage
 
 ```{r lib-ex}
-library(hrbrmsic)
+library(hrbrmisc)
 
 # current version
 packageVersion("hrbrmisc")
