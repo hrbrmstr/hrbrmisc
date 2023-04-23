@@ -6,6 +6,11 @@
 \usage{
 pf_sub(dat, pat, repl, ...)
 }
+\arguments{
+\item{dat, pat, repl}{rame as sub but order diff}
+
+\item{...}{passed on}
+}
 \description{
 data first sub
 }

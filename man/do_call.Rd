@@ -6,6 +6,11 @@
 \usage{
 do_call(dat, ƒ)
 }
+\arguments{
+\item{dat, ƒ}{rame as sub but order diff}
+
+\item{...}{passed on}
+}
 \description{
 data first do.call
 }

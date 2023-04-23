@@ -6,6 +6,11 @@
 \usage{
 strsplit_one(x, ...)
 }
+\arguments{
+\item{x}{cahr vector}
+
+\item{...}{passed on}
+}
 \description{
 data first strsplit
 }

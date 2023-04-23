@@ -6,6 +6,11 @@
 \usage{
 map_field_list(x, field)
 }
+\arguments{
+\item{x}{list/vector}
+
+\item{field}{thing for `[[field]]`}
+}
 \description{
 data first lapply `[[`
 }

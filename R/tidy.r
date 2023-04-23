@@ -2,6 +2,8 @@
 
 #' data first strsplit
 #' 
+#' @param x cahr vector
+#' @param ... passed on
 #' @export
 strsplit_one <- function(x, ...) {
   unlist(strsplit(x, ...))
@@ -9,6 +11,8 @@ strsplit_one <- function(x, ...) {
 
 #' data first sapply `[[`
 #'
+#' @param x list/vector
+#' @param field thing for `[[field]]`
 #' @export
 map_field_simple <- function(x, field) {
   sapply(x, "[[", field)
@@ -16,6 +20,8 @@ map_field_simple <- function(x, field) {
 
 #' data first lapply `[[`
 #'
+#' @param x list/vector
+#' @param field thing for `[[field]]`
 #' @export
 map_field_list <- function(x, field) {
   lapply(x, "[[", field)
@@ -23,6 +29,8 @@ map_field_list <- function(x, field) {
 
 #' data first do.call
 #'
+#' @param dat,ƒ rame as sub but order diff
+#' @param ... passed on
 #' @export
 do_call <- function(dat, ƒ) {
   do.call(ƒ, dat)
@@ -30,6 +38,8 @@ do_call <- function(dat, ƒ) {
 
 #' data first grep
 #'
+#' @param dat,pat rame as sub but order diff
+#' @param ... passed on
 #' @export
 pf_grep <- function(dat, pat, ...) {
   grep(pat, dat, ...)
@@ -37,6 +47,8 @@ pf_grep <- function(dat, pat, ...) {
 
 #' data first grepl
 #'
+#' @param dat,pat, rame as sub but order diff
+#' @param ... passed on
 #' @export
 pf_grepl <- function(dat, pat, ...) {
   grepl(pat, dat, ...)
@@ -44,6 +56,8 @@ pf_grepl <- function(dat, pat, ...) {
 
 #' data first sub
 #'
+#' @param dat,pat,repl rame as sub but order diff
+#' @param ... passed on 
 #' @export
 pf_sub <- function(dat, pat, repl, ...) {
   sub(pat, repl, dat, ...)

@@ -6,6 +6,11 @@
 \usage{
 pf_grepl(dat, pat, ...)
 }
+\arguments{
+\item{dat, pat, }{rame as sub but order diff}
+
+\item{...}{passed on}
+}
 \description{
 data first grepl
 }
